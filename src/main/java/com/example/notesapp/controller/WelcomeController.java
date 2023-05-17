@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
-    @GetMapping("")
+    @GetMapping("/")
     public String welcomeMessage(){
         return "Welcome to Spring Boot Notes Application";
     }
