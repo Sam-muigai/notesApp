@@ -1,0 +1,28 @@
+
+PUT http://localhost:8080/v1/notes/1
+Content-Type: application/json
+
+{
+  "email": "sam@gmail.com",
+  "title": "Coding Updated",
+  "description": "Sam loves coding updated",
+  "category": "CODING"
+}
+
+
+###Post a new note
+POST http://localhost:8080/v1/notes
+Content-Type: application/json
+
+{
+  "email": "sam@gmail.com",
+  "title": "Coding",
+  "description": "Sam loves coding",
+  "category": "CODING"
+}
+
+
+
+
+
+
