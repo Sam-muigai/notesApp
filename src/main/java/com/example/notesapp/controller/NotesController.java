@@ -30,7 +30,7 @@ public class NotesController {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/notes/{id}")
+    @GetMapping("/note/{id}")
     public Notes getNoteById(@PathVariable Integer id){
         return service.getNoteById(id);
     }
