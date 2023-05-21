@@ -1,7 +1,6 @@
 package com.example.notesapp;
 
 import com.example.notesapp.model.Notes;
-import com.example.notesapp.repository.NotesRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
 package com.example.notesapp.service;
 
 import com.example.notesapp.model.Notes;
-import com.example.notesapp.repository.NotesRepository;
+import com.example.notesapp.NotesRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -51,6 +51,10 @@ public class NotesService {
 
     public void deleteNote(Integer id){
         repository.deleteById(id);
+    }
+
+    public List<Notes> getAllBySearchTerm(String email,String searchTerm){
+        return repository.findAllByEmailAndTitleContainingIgnoreCase(email,searchTerm);
     }
 
 }

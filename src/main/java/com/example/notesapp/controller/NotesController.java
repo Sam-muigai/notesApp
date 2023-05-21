@@ -50,4 +50,9 @@ public class NotesController {
         service.deleteNote(id);
     }
 
+    @GetMapping("/search/{email}/{searchTerm}")
+    public List<Notes> getAllBySearch(@PathVariable String email,@PathVariable String searchTerm){
+        return service.getAllBySearchTerm(email,searchTerm);
+    }
+
 }
